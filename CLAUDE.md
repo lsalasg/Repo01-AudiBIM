@@ -29,7 +29,7 @@ Carpeta de la clase: `Documents\bim-ia\` (aquí irán los siguientes repos: Repo
 - Se creó `Documents\bim-ia\` y se clonó el repo (1 commit: "Initial commit").
 - Se instaló el .NET SDK 10.
 - Compilado en Release (`dotnet build -c Release`) → `bin\Release\net10.0-windows\BIMQualityAuditor.dll`. 0 errores, 0 advertencias.
-- **Bug del repo corregido:** `App.cs` carga `AudiBIM_32.png` y `AudiBIM_16.png` para el ícono del Ribbon, pero el `.csproj` no los copiaba al output, así que el botón salía sin ícono. Se agregaron como `Content` en el `.csproj` Commit `3981851` en la rama `fix/iconos-ribbon`, rebasada sobre el main 2026 del profesor y subida al fork para PR a ComunidadECD. Candidato a reportar al profesor.
+- **Bug del repo corregido:** `App.cs` carga `AudiBIM_32.png` y `AudiBIM_16.png` para el ícono del Ribbon, pero el `.csproj` no los copiaba al output, así que el botón salía sin ícono. Se agregaron como `Content` en el `.csproj` Commit `3981851` en la rama `fix/iconos-ribbon`, rebasada sobre el main 2026 del profesor y subida al fork y también directo al repo del profesor (lsalasg ya es colaborador con escritura). PR: `fix/iconos-ribbon` → `main` de ComunidadECD. Candidato a reportar al profesor.
 - Manifiesto instalado en `%APPDATA%\Autodesk\Revit\Addins\2027\AudiBIM.addin` apuntando a la DLL de Release (la carpeta `2027` no existía; se creó).
 - Para que Revit cargue el add-in hay que reiniciar Revit. Después de eso, para recompilar hay que cerrar Revit primero (bloquea la DLL).
 - El repo **no trae modelo Revit**: no hay `.rvt` ni LFS, y tampoco releases ni otras ramas. Para probar se usa el sample de Autodesk, copiado a `bim-ia\modelos\Snowdon Towers Sample Architectural.rvt` (sin atributo de solo lectura).
