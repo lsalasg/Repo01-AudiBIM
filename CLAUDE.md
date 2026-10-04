@@ -43,3 +43,4 @@ Carpeta de la clase: `Documents\bim-ia\` (aquí irán los siguientes repos: Repo
 - Remotos: `upstream` = repo del profesor (ComunidadECD) · `origin` = fork `lsalasg/Repo01-AudiBIM`.
 - Ramas: `main` = copia limpia del profesor (no se toca) · `larry` = rama de trabajo del día a día · ramas de tema (`fix/…`, `feature/…`) salen de `main` solo para PR al profesor.
 - Traer cambios del profesor: `git switch main` → `git pull upstream main` → `git switch larry` → `git merge main`.
+- **Decisión 2026-10-04: Larry se queda en Revit 2027.** El profesor migró el repo a Revit 2026 (.NET 8) en `979ba73` y `0e1124c`. Al hacer merge de `main` a `larry` se mantiene Revit 2027 / `net10.0-windows` en el `.csproj`, el `.addin` y la etiqueta de `MainWindow.xaml`. En cada merge futuro del profesor hay que revisar que no vuelva a 2026. En esta PC no hay Revit 2026.
